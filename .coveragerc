@@ -1,0 +1,3 @@
+[run]
+source = bargain_bin
+omit = bargain_bin/test*

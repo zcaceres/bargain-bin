@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="bargain bin web application">
+    <meta name="author" content="Zach Caceres">
+    <link rel="shortcut icon" href="">
+
+    <title>The Bargain Bin – Click a button, find a cool used book!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//oss.maxcdn.com/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this scaffold -->
+    <link href="${request.static_url('bargain_bin:static/theme.css')}" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="starter-template">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="content">
+              <h1><span>The </span><span class="font-semi-bold">Bargain Bin</span></h1>
+              <p class="lead">Click the button, find a (cool) used book.</p>
+              <a href="/"><button type="button" class="btn btn-lg btn-primary">Button</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-md-offset-2">
+            <div>
+              <a href="${ url }" target="_blank"><h2> ${ title } </h2></a>
+              <h4> by ${ author } </h4>
+              <p class="small"> ${ description } </p>
+              <p> Costs only: <strong>${ price } </strong></p>
+              <p>Shipping is: <strong>${ shipping } </strong></p>
+            </div>
+          </div>
+          <div class="col-md-2">
+              <div class="embed-responsive">
+                <a href="${ url }" target="_blank">
+                <img class="embed-responsive-item" src="${ img_url }"></img>
+              </a>
+              </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-center"> How does it work? </h2>
+            <h4>
+              The Bargain Bin uses <a href="https://www.crummy.com/software/BeautifulSoup/bs4/" target="_blank">BeautifulSoup</a> and
+              <a href="http://docs.python-requests.org/en/master/" target="_blank">Requests</a> to query Abebooks.com using randomly-chosen noun.
+              This data is prepared and then displayed for your browsing pleasure!
+            </h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="links">
+            <ul>
+              <li class="current-version">Made in <a href="https://www.python.org/">Python</a> with <a href="http://pylonsproject.org">Pyramid v1.7.3</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="copyright">
+            Made by Zach Caceres for <a href="#" target="_blank">Python-a-thon</a> 2016.
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//oss.maxcdn.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//oss.maxcdn.com/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  </body>
+</html>
