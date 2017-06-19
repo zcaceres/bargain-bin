@@ -1,5 +1,5 @@
 # The Bargain Bin
-###Click the button, find a cool used book.
+### Click the button, find a cool used book.
 
 I wondered what it would be like to recreate the sense of fun and randomness of the 'bargain bin' in a bookstore, where you never know what you're going to find! 
 
